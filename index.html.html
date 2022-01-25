@@ -1,0 +1,59 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+<img src="ini.png" alt="" width="25%">
+ <p>Click Pada Menu Dibawah</p>
+</div>
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="opengambar('mobil')">Mobil</button>
+ <button class="w3-bar-item w3-button" onclick="opengambar('motor')">Motor</button>
+ <button class="w3-bar-item w3-button" onclick="opengambar('truck')">Truck</button>
+ <button class="w3-bar-item w3-button" onclick="opengambar('ronaldo')">C.ronaldo</button>
+</div>
+<div class="w3-container w3-center w3-animate-fading">
+<div id="mobil" class="w3-container gambar" style="display:none">
+    <img src="lamo.png" width="30%">
+ <h2>dikenal dengan mobil sport mahal dan terkenal di seluruh dunia
+<br>
+    Banyak kelebihan yang ditawarkan oleh Lamborghini mulai dari segi desainnya, mesin bertenaga besar hingga beragam fitur menarik yang ditawarkan. Untuk harganya tentu mahal akan tetapi sebanding kualitasnya sekitar Rp. 6 Milyar bahkan Hingga Rp. 8 Milyar.
+ </h2>
+</div>
+</div>
+<div class="w3-container w3-center w3-animate-fading">
+<div id="motor" class="w3-container gambar" style="display:none">
+<img src="ninja.png" width="30%">
+ <h2>Dikenal dengan motor bersuara moge tetapi 250 cc dengan model yang mewah dan elegant
+    <br>
+Kelebihan kawasaki ZX-25R yang pertama tentunya terdapat pada desain motor yang sudah sangat sporty, dirancang dengan model ala MotoGP dengan menggunakan full firing kemudian model tempat duduk split level membuat penampilan ninja ZX-25R sangat terlihat sporty.</h2>
+</div>
+</div>
+<div class="w3-container w3-center w3-animate-fading">
+<div id="truck" class="w3-container gambar" style="display:none">
+ <img src="apa.png" width="30%">
+ <h2>truck ini dikenal sebagai truck sport yang sering di pakai di film fast and forious oleh dwayne jonshon</h2>
+</div>
+</div>
+<div class="w3-container w3-center w3-animate-bottom">
+<div id="ronaldo" class="w3-container gambar" style="display:none">
+ <img src=ronaldo.png>
+<h2>Cristiano ronaldo adalah pemain bintang bola yang sangat terkenal di semua negara bahkan menjadi orang yg punya followers 
+    terbanyak di dunia
+    <br>
+    Meski awalnya memuji Salah, tapi Klopp juga menyebutkan dua kelebihan Cristiano Ronaldo. "Tapi, Cristiano punya kaki kanan yang lebih baik, dan dia sangat hebat di udara," "Intinya, mereka sama-sama manusia yang cepat, dan sama-sama rakus mencetak gol,"
+</h2>
+</div>
+<script>
+function opengambar(namagambar) {
+ var i;
+ var x = document.getElementsByClassName("gambar");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namagambar).style.display = "block";
+}  
+</script>
+</body>
+</html>
